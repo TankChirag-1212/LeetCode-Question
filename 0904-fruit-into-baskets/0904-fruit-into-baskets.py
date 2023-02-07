@@ -25,3 +25,36 @@ class Solution:
 
             max_picked = max(max_picked, curr_max)          # it always gives the maximum subarray we found up untill now
         return max_picked
+    
+    # ANOTHER APPROCH
+    
+    def totalFruit(fruits):
+    n = len(fruits)
+    c1, c2 = 0, 0  # Counter variables to keep track of the count of fruits in the two baskets
+    t1, t2 = -1, -1  # Variables to keep track of the two types of fruits in the baskets
+    ans = i = 0  # ans variable to store the maximum number of fruits picked, and i variable to keep track of the left pointer
+    
+    for j in range(n):
+        # If the current fruit is the same as the first type of fruit in the baskets
+        if fruits[j] == t1 or t1 == -1:
+            c1 += 1
+        # If the current fruit is the same as the second type of fruit in the baskets
+        elif fruits[j] == t2 or t2 == -1:
+            c2 += 1
+        # If the current fruit is different from both types of fruits in the baskets
+        else:
+            ans = max(ans, j - i)  # Update the maximum number of fruits picked
+            i = j - 1  # Move the left pointer back to the previous tree
+            
+            # Move the left pointer back until it is pointing to the first tree with the second type of fruit
+            while fruits[i] == t2:
+                i -= 1
+                c2 -= 1
+                
+            # Update the two types of fruits in the baskets and their count
+            t1, t2 = t2, fruits[j]
+            c1, c2 = c2, 1
+            
+    # Update the final answer after processing all the trees
+    ans = max(ans, n - i)
+    return ans
