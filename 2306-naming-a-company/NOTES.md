@@ -1,0 +1,1 @@
+very interesting Problem solved using hashmap (best example to learn how hash map works in python)
