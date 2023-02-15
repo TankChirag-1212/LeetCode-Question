@@ -17,3 +17,19 @@ class Solution:
             i += 1
             
         return num[::-1]
+    
+# ANOTHER BASIC APPROACH
+
+class Solution:
+    def addToArrayForm(self, num: List[int], k: int) -> List[int]:
+        ans=[]
+        a = num[0]
+        
+        for i in range(1,len(num)):
+            a = a*10 + num[i]
+        a = a+k
+        
+        for i in str(a):
+            ans.append(int(i))
+            
+        return ans
