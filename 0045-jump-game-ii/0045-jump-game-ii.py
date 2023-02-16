@@ -10,3 +10,4 @@ class Solution:
                 curr = furthest
                 Jump += 1
         return Jump
+    
