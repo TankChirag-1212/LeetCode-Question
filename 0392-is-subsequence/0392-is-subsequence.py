@@ -10,3 +10,4 @@ class Solution:
                 break
         return i == len(s)
     
+    
