@@ -26,3 +26,4 @@ class Solution:
                 ans.append(abs(L-1-i))
         return ans
             
+        
