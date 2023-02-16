@@ -37,4 +37,3 @@ class Solution:
                 if matrix[row][i] != "0":
                     answer += matrix[row][i]
         return answer
-
