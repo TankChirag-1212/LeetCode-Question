@@ -12,7 +12,6 @@ class Solution:
                 traverse(node.left)
                 arr.append(node.val)
                 traverse(node.right)
-              
         traverse(root)
         print(arr)
         diff = float('inf')
