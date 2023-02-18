@@ -7,6 +7,7 @@
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         q = deque([root])
+        
         while q:
             node = q.popleft()
             if node is None:
