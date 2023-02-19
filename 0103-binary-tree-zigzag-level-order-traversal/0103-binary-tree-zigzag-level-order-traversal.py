@@ -10,7 +10,6 @@ class Solution:
         if root is None:
             return root
         arr= []
-
         while q:
             level = []
             for i in range(len(q)):
