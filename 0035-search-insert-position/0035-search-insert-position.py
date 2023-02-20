@@ -3,6 +3,7 @@ class Solution:
         n = len(nums)
         i = 0
         j = n-1
+        
         while i<=j:
             mid = i+(j-i)//2
             if nums[mid]==target:
