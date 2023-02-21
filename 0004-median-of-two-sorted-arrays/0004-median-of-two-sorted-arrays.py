@@ -10,3 +10,4 @@ class Solution:
         else:
             median = (nums[(n-1)//2] + nums[(n)//2])/2
             return median
+        
