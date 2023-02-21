@@ -15,6 +15,7 @@ class Solution:
             else:
                 left = m + 1
                 
+                
 # Unique way to use binary searching
 # In this problem we use two pointer left and right and we calculate mid if left or right of mid is same then we check which side of subarray is of odd length
 #  we pick the odd one because it ensures that there will be the answer and repeat the process again
