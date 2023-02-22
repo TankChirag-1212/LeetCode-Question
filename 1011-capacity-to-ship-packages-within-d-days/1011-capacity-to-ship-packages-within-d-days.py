@@ -21,6 +21,7 @@ class Solution:
                 l = cap + 1
         return res
     
+    
 # In this problem we have to return the minimum number of capacity given ships can take(all the weights must be considered)
 # first we found the lower and upper bound of subarrays of capacity
 # then by using brute force approach we check for each capacity whether the condition satisfies or not
