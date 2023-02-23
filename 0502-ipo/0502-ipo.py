@@ -14,7 +14,6 @@ class Solution:
             w += -heappop(q)
         return w
     
-
 #  This problem is example of greedy problem, it can be solved optimally by using priority queue only
 # in this we use heapq module of python to import as priority queue
 # In this problem we have to give the final maximum capital we can get using those projects who has higher profits and fits in the capital 
