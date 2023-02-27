@@ -34,3 +34,10 @@ class Solution:
 # we first compare all the cells in the given grid and check if theres any cell with different value if it gets then it forms the quadrants and call the recursion function untill all the quadrants are not traversed and solved
 # we form the quadrants by using n//2 where n is the length of given grid
 # as we used dfs it first solve the 1st quadrant/leaf and then its sub-quadrants/childs and their sub-quadrants/childs untill n becomes 1 and then it goes to next parent quadrant/leaf
+
+
+
+
+
+
+
