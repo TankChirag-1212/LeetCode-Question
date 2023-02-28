@@ -26,3 +26,5 @@ class Solution:
 # then we use dfs function in which we use recursion to store all the subtrees serialization in the hashmap or dict
 # we check every time that if the serialization of any subtree is repeated for once then we append the root or the current node we are on and we do this for all the subtrees
 # in explanation they use trick to confuse a bit we just have to return the root not the list of the subtree nodes
+
+
