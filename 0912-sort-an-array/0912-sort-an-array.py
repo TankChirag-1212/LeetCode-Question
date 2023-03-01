@@ -5,7 +5,6 @@ class Solution:
                 left = nums[:len(nums)//2]
                 right = nums[len(nums)//2:]
                 
-                
                 mergeSort(left)
                 mergeSort(right)
                 
