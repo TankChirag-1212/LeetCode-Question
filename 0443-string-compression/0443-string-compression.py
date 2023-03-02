@@ -1,24 +1,25 @@
 class Solution:
     def compress(self, chars: List[str]) -> int:
         s = ""
-        prev = chars[0]
-        prevFreq = 1
-        
-        for i in range(1, len(chars)):
-            if chars[i] == prev:
-                prevFreq += 1
-                
-            else:
-                s += prev
-                if prevFreq > 1:
-                    s += str(prevFreq)
-                prev = chars[i]
-                prevFreq = 1
-            
-        s += prev
-        if prevFreq > 1:
-            s += str(prevFreq)
-        
+        i = 0
+        j = 1
+        s+=chars[i]
+        frq = 1
+        while j < len(chars):
+
+            if chars[i] == chars[j]:
+                frq += 1
+
+            if chars[i]!= chars[j]:
+                if frq>1:
+                    s+= str(frq)
+                i = j
+                s+=chars[i]
+                frq = 1
+            if j == len(chars)-1:
+                if frq>1:
+                    s+= str(frq)
+            j+=1
         chars.clear()
         for _ in s:
             chars.append(_)
