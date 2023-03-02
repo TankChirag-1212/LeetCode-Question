@@ -6,7 +6,6 @@ class Solution:
         s+=chars[i]
         frq = 1
         while j < len(chars):
-
             if chars[i] == chars[j]:
                 frq += 1
 
