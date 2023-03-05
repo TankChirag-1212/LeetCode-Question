@@ -14,3 +14,4 @@ class Solution:
 # we keep track of the number we are passing pillow to using count and if the count is equal to n then we decrement the count and again increment when we reach the value of count as 1
 # with the help of flag we keep track of incrimenting and decrimenting the count if count == n then we makes the flag 1 and decrement the count until count == 1
 # then we change the flag to 0 again and continues the increment of count
+
