@@ -16,3 +16,4 @@ class Solution:
 # we check the missing values using "arr[mid] - mid" where mid is the index of middle
 # we continue untill the left pointer is greater than right pointer
 # at last we return the answer as left pointers index + k
+
